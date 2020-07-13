@@ -12,9 +12,11 @@ function pow () {
 };
 console.log(pow());
 ////exercise 2
-let userNumber;
-let randomNumber = Math.floor(Math.random() *10);
+function getRandom() {
+    return Math.floor(Math.random()*10);
+}
 function game (){
+    let randomNumber = getRandom();
     for (userNumber; ; userNumber == randomNumber, userNumber ){
     { if (userNumber == randomNumber) {
         return confirm ('You win'); 
